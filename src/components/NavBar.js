@@ -1,20 +1,19 @@
+
 import React from "react";
+import GifListContainer from "./GifListContainer";
 
-function NavBar({ color, title }) {
-  const colors = {
-    black: "navbar-inverse",
-    white: "navbar-default",
-  };
+import NavBar from "./NavBar";
 
+
+function App() {
   return (
-    <nav className={`navbar ${colors[color]}`}>
-      <div className="container-fluid">
-        <div className="navbar-header">
-          <span className="navbar-brand">{title}</span>
-        </div>
-      </div>
-    </nav>
+    
+    <div>
+      <NavBar color="black" title="Giphy Search" />
+      <GifListContainer />
+    </div>
   );
 }
 
-export default NavBar;
+
+export default App;
